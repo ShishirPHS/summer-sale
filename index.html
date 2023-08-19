@@ -5,17 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ultimate Summer Sale Destination</title>
 
-    <!-- daisyUi and tailwind css link below -->
+    <!-- work sans font link start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Work Sans', sans-serif; -->
+    <!-- work sans font link end -->
+
+    <!-- daisyUi and tailwind css link start -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUi and tailwind css link end -->
+    <style>
+      body {
+        font-family: "Work Sans", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <header>
-        
+    <header class="bg-[#F9F6E2]">
+      <!-- banner part -->
+      <div class="container mx-auto flex items-center py-20">
+        <!-- banner content -->
+        <div class="flex flex-col items-center">
+          <h4 class="text-[#111] text-3xl text-center font-medium">
+            ---SALE FEVER---
+          </h4>
+          <h1
+            class="text-[#111] text-6xl text-center font-bold max-w-[703px] mx-auto mt-11 mb-16"
+          >
+            Purchase TK 200 or above & get
+            <span class="text-[#E527B2]"> 20% off </span>
+          </h1>
+          <div>
+            <p
+              class="inline-block text-center text-[#111] text-2xl font-medium mr-4"
+            >
+              Use Promo Code
+            </p>
+            <button
+              class="text-white text-center text-2xl font-semibold bg-[#E527B2] py-4 px-7 rounded-lg"
+            >
+              SELL200
+            </button>
+          </div>
+        </div>
+        <!-- banner img -->
+        <div>
+          <img src="./images/Summer 1.png" alt="Summer 1.png" />
+        </div>
+      </div>
     </header>
     <main></main>
   </body>
