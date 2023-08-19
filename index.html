@@ -65,20 +65,22 @@
       </div>
     </header>
     <main class="bg-[#F8F8F8] pt-32 pb-52">
-      <section class="container mx-auto grid grid-cols-4 gap-6">
+      <section
+        class="container mx-auto grid grid-cols-4 gap-6 lg:gap-5 xl:gap-6"
+      >
         <!-- cards container wrapper -->
         <div class="col-span-3">
           <!-- Kitchenware cards -->
           <h3 class="text-[#111] text-[40px] font-semibold mb-8">
             Kitchenware
           </h3>
-          <div class="grid grid-cols-3 gap-6">
+          <div class="grid grid-cols-3 gap-6 lg:gap-5 xl:gap-6">
             <!-- single card (k accessories one) -->
             <div
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
               <img
-                class="h-full py-8 bg-[#1111110d] rounded-lg lg:px-[40px] xl:px-24 2xl:px-[108px]"
+                class="h-full py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-24 2xl:px-[108px]"
                 src="./images/prod1.png"
                 alt="prod1.png"
               />
@@ -144,7 +146,7 @@
           <h3 class="text-[#111] text-[40px] font-semibold mb-8 mt-14">
             Sportswear
           </h3>
-          <div class="grid grid-cols-3 gap-6">
+          <div class="grid grid-cols-3 gap-6 lg:gap-5 xl:gap-6">
             <!-- single card (k accessories one) -->
             <div
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
@@ -214,7 +216,28 @@
           </div>
         </div>
         <!-- cart container -->
-        <div class="col-span-1"></div>
+        <div class="col-span-1">
+          <!-- have coupon -->
+          <div class="mt-[92px] p-6 bg-white rounded-lg">
+            <h5 class="text-[#111] text-2xl font-medium mb-4">Have coupon?</h5>
+            <div class="relative">
+              <input
+                id=""
+                class="p-4 rounded-s-lg max-w-[194px] lg:max-w-[138px] xl:max-w-[166px] 2xl:max-w-[194px] border border-[#DBDBDB]"
+                placeholder="Coupon code"
+                type="text"
+                name=""
+              />
+              <button
+                class="absolute left-[193px] pt-[15px] pb-[14.8px] px-6 lg:px-5 xl:px-6 bg-[#E527B2] text-white text-xl font-semibold rounded-e-lg"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+          <!-- make purchase -->
+          <div></div>
+        </div>
       </section>
     </main>
   </body>
