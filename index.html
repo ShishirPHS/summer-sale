@@ -77,6 +77,7 @@
           <div class="grid grid-cols-3 gap-6 lg:gap-5 xl:gap-6">
             <!-- single card (k accessories one) -->
             <div
+              onclick="handleClickedCard()"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
               <img
@@ -101,6 +102,7 @@
             </div>
             <!-- single card (k accessories two) -->
             <div
+              onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
               <img
@@ -125,6 +127,7 @@
             </div>
             <!-- single card (home cooker) -->
             <div
+              onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
               <img
@@ -153,8 +156,9 @@
             Sportswear
           </h3>
           <div class="grid grid-cols-3 gap-6 lg:gap-5 xl:gap-6">
-            <!-- single card (k accessories one) -->
+            <!-- single card (cap) -->
             <div
+              onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
               <img
@@ -177,8 +181,9 @@
                 <span id="cap-price">49.00</span> TK
               </p>
             </div>
-            <!-- single card (k accessories two) -->
+            <!-- single card (jersey) -->
             <div
+              onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
               <img
@@ -201,8 +206,9 @@
                 <span id="jersy-price">69.00</span> TK
               </p>
             </div>
-            <!-- single card (home cooker) -->
+            <!-- single card (cates) -->
             <div
+              onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
               <img
@@ -244,7 +250,8 @@
                   name=""
                 />
                 <button
-                  class="absolute left-[193px] pt-[15px] pb-[14.8px] px-6 lg:px-5 xl:px-6 bg-[#E527B2] text-white text-xl font-semibold rounded-e-lg"
+                  id="btn-apply"
+                  class="absolute left-[193px] pt-[15px] pb-[14.8px] px-6 lg:px-5 xl:px-6 bg-[#E527B2] text-white text-xl font-semibold rounded-e-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Apply
                 </button>
@@ -293,7 +300,7 @@
       </section>
     </main>
 
-    <!-- script files link -->
-    <script src="./js/utilities.js"></script>
+    <!-- script file link -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
