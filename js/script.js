@@ -3,6 +3,7 @@ const btnApply = document.getElementById("btn-apply");
 const btnMakePurchase = document.getElementById("btn-make-purchase");
 
 let totalPriceValue = 0;
+
 const totalPrice = document.getElementById("total-price");
 const discountPrice = document.getElementById("discount");
 const total = document.getElementById("afterDiscount");
