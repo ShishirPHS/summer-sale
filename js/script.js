@@ -8,11 +8,11 @@ const totalPrice = document.getElementById("total-price");
 const discountPrice = document.getElementById("discount");
 const total = document.getElementById("afterDiscount");
 
+const selectedItemsContainer = document.getElementById("selected-items-list");
+
 // card handle function
 function handleClickedCard(target) {
   const itemName = target.childNodes[7].innerText;
-
-  const selectedItemsContainer = document.getElementById("selected-items-list");
 
   const li = document.createElement("li");
   li.classList.add(
@@ -60,3 +60,12 @@ function getDiscount() {
     alert("Invalid coupon code");
   }
 }
+
+// add an event listener to 'go home' btn
+document.getElementById("go-home").addEventListener("click", function () {
+  selectedItemsContainer.innerHTML = "";
+
+  totalPrice.innerText = "00.00";
+  discountPrice.innerText = "00.00";
+  total.innerText = "00.00";
+});
