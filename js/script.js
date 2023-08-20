@@ -4,7 +4,7 @@ btnApply.disabled = true;
 const btnMakePurchase = document.getElementById("btn-make-purchase");
 btnMakePurchase.disabled = true;
 
-let totalPrice = 0;
+let totalPriceValue = 0;
 
 function handleClickedCard(target) {
   const itemName = target.childNodes[7].innerText;
@@ -22,6 +22,23 @@ function handleClickedCard(target) {
   li.innerText = itemName;
   selectedItemsContainer.appendChild(li);
 
-  //   const itemPrice =
-  console.log(target.childNodes[9].innerText.split(" ")[0]);
+  const itemPrice = target.childNodes[9].innerText.split(" ")[0];
+
+  totalPriceValue = parseFloat(totalPriceValue) + parseFloat(itemPrice);
+
+  const totalPrice = document.getElementById("total-price");
+  totalPrice.innerText = totalPriceValue.toFixed(2);
+
+  if (totalPriceValue > 0) {
+    btnMakePurchase.disabled = false;
+  }
+
+  if (totalPriceValue >= 200) {
+    btnApply.disabled = false;
+  }
+}
+
+function getDiscount() {
+  const coupon = getInputFieldValue("coupon-field");
+  console.log(coupon);
 }

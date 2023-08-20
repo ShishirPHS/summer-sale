@@ -231,7 +231,7 @@
               </h5>
               <div class="relative">
                 <input
-                  id=""
+                  id="coupon-field"
                   class="p-4 rounded-s-lg max-w-[194px] lg:max-w-[138px] xl:max-w-[166px] 2xl:max-w-[194px] border border-[#DBDBDB]"
                   placeholder="Coupon code"
                   type="text"
@@ -239,6 +239,7 @@
                 />
                 <button
                   id="btn-apply"
+                  onclick="getDiscount()"
                   class="absolute left-[193px] pt-[15px] pb-[14.8px] px-6 lg:px-5 xl:px-6 bg-[#E527B2] text-white text-xl font-semibold rounded-e-lg disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Apply
@@ -285,7 +286,8 @@
       </section>
     </main>
 
-    <!-- script file link -->
+    <!-- script files link -->
+    <script src="./js/utilities.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
