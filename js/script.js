@@ -4,6 +4,8 @@ btnApply.disabled = true;
 const btnMakePurchase = document.getElementById("btn-make-purchase");
 btnMakePurchase.disabled = true;
 
+let totalPrice = 0;
+
 function handleClickedCard(target) {
   const itemName = target.childNodes[7].innerText;
 
@@ -19,4 +21,7 @@ function handleClickedCard(target) {
   );
   li.innerText = itemName;
   selectedItemsContainer.appendChild(li);
+
+  //   const itemPrice =
+  console.log(target.childNodes[9].innerText.split(" ")[0]);
 }
