@@ -5,7 +5,10 @@ const btnMakePurchase = document.getElementById("btn-make-purchase");
 btnMakePurchase.disabled = true;
 
 let totalPriceValue = 0;
+const discountPrice = document.getElementById("discount");
+const total = document.getElementById("afterDiscount");
 
+// card handle function
 function handleClickedCard(target) {
   const itemName = target.childNodes[7].innerText;
 
@@ -29,6 +32,8 @@ function handleClickedCard(target) {
   const totalPrice = document.getElementById("total-price");
   totalPrice.innerText = totalPriceValue.toFixed(2);
 
+  total.innerText = totalPriceValue.toFixed(2);
+
   if (totalPriceValue > 0) {
     btnMakePurchase.disabled = false;
   }
@@ -38,7 +43,17 @@ function handleClickedCard(target) {
   }
 }
 
+// apply discount button
 function getDiscount() {
-  const coupon = getInputFieldValue("coupon-field");
-  console.log(coupon);
+  const couponField = document.getElementById("coupon-field");
+  const coupon = couponField.value;
+
+  couponField.value = "";
+
+  if (coupon === "SELL200") {
+    const discount = totalPriceValue * 0.2;
+    discountPrice.innerText = discount.toFixed(2);
+    const afterDiscountTotal = totalPriceValue - totalPriceValue * 0.2;
+    total.innerText = afterDiscountTotal.toFixed(2);
+  }
 }
