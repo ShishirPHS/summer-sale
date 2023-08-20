@@ -1,8 +1,6 @@
 const btnApply = document.getElementById("btn-apply");
-btnApply.disabled = true;
 
 const btnMakePurchase = document.getElementById("btn-make-purchase");
-btnMakePurchase.disabled = true;
 
 let totalPriceValue = 0;
 const totalPrice = document.getElementById("total-price");
@@ -43,7 +41,7 @@ function handleClickedCard(target) {
   }
 }
 
-// apply discount button
+// apply discount function
 function getDiscount() {
   const couponField = document.getElementById("coupon-field");
   const coupon = couponField.value;
