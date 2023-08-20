@@ -65,7 +65,12 @@ function getDiscount() {
 document.getElementById("go-home").addEventListener("click", function () {
   selectedItemsContainer.innerHTML = "";
 
-  totalPrice.innerText = "00.00";
-  discountPrice.innerText = "00.00";
-  total.innerText = "00.00";
+  totalPriceValue = 0;
+  totalPrice.innerText = totalPriceValue.toFixed(2);
+  discountPrice.innerText = parseFloat("0.00").toFixed(2);
+  total.innerText = parseFloat("0.00").toFixed(2);
+
+  btnMakePurchase.disabled = true;
+
+  btnApply.disabled = true;
 });
