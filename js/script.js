@@ -5,6 +5,7 @@ const btnMakePurchase = document.getElementById("btn-make-purchase");
 btnMakePurchase.disabled = true;
 
 let totalPriceValue = 0;
+const totalPrice = document.getElementById("total-price");
 const discountPrice = document.getElementById("discount");
 const total = document.getElementById("afterDiscount");
 
@@ -29,7 +30,6 @@ function handleClickedCard(target) {
 
   totalPriceValue = parseFloat(totalPriceValue) + parseFloat(itemPrice);
 
-  const totalPrice = document.getElementById("total-price");
   totalPrice.innerText = totalPriceValue.toFixed(2);
 
   total.innerText = totalPriceValue.toFixed(2);
@@ -55,5 +55,9 @@ function getDiscount() {
     discountPrice.innerText = discount.toFixed(2);
     const afterDiscountTotal = totalPriceValue - totalPriceValue * 0.2;
     total.innerText = afterDiscountTotal.toFixed(2);
+  } else if (coupon === "") {
+    alert("Please provide a coupon code");
+  } else {
+    alert("Invalid coupon code");
   }
 }
