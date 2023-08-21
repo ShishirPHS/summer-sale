@@ -88,11 +88,11 @@
               onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
-              <img
-                class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-[60px] 2xl:px-[108px]"
-                src="./images/prod1.png"
-                alt="prod1.png"
-              />
+              <div
+                class="flex justify-center items-center w-full py-10 lg:py-8 bg-[#1111110d] rounded-lg"
+              >
+                <img src="./images/prod1.png" alt="prod1.png" />
+              </div>
               <!-- icon div -->
               <div class="mt-5 mb-2">
                 <i class="fa-solid fa-star text-[#FFC107]"></i>
@@ -113,11 +113,11 @@
               onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
-              <img
-                class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-[60px] 2xl:px-[108px]"
-                src="./images/prod2.png"
-                alt="prod2.png"
-              />
+              <div
+                class="flex justify-center items-center w-full py-10 lg:py-8 bg-[#1111110d] rounded-lg"
+              >
+                <img src="./images/prod2.png" alt="prod2.png" />
+              </div>
               <!-- icon div -->
               <div class="mt-5 mb-2">
                 <i class="fa-regular fa-star text-[#FFC107]"></i>
@@ -138,12 +138,10 @@
               onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
-              <div>
-                <img
-                  class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-[60px] 2xl:px-[108px]"
-                  src="./images/prod3.png"
-                  alt="prod3.png"
-                />
+              <div
+                class="flex justify-center items-center w-full py-10 lg:py-8 bg-[#1111110d] rounded-lg"
+              >
+                <img src="./images/prod3.png" alt="prod3.png" />
               </div>
               <!-- icon div -->
               <div class="mt-5 mb-2">
@@ -171,11 +169,11 @@
               onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
-              <img
-                class="py-8 bg-[#1111110d] rounded-lg px-[65px] lg:px-[40px] xl:px-[60px] 2xl:px-[108px]"
-                src="./images/prod4.png"
-                alt="prod4.png"
-              />
+              <div
+                class="flex justify-center items-center w-full py-10 lg:py-8 bg-[#1111110d] rounded-lg"
+              >
+                <img src="./images/prod4.png" alt="prod4.png" />
+              </div>
               <!-- icon div -->
               <div class="mt-5 mb-2">
                 <i class="fa-solid fa-star text-[#FFC107]"></i>
@@ -196,11 +194,11 @@
               onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
-              <img
-                class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-[60px] 2xl:px-[108px]"
-                src="./images/prod5.png"
-                alt="prod5.png"
-              />
+              <div
+                class="flex justify-center items-center w-full py-10 lg:py-8 bg-[#1111110d] rounded-lg"
+              >
+                <img src="./images/prod5.png" alt="prod5.png" />
+              </div>
               <!-- icon div -->
               <div class="mt-5 mb-2">
                 <i class="fa-solid fa-star text-[#FFC107]"></i>
@@ -221,11 +219,11 @@
               onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
-              <img
-                class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-[60px] 2xl:px-[108px]"
-                src="./images/prod6.png"
-                alt="prod6.png"
-              />
+              <div
+                class="flex justify-center items-center w-full py-10 lg:py-8 bg-[#1111110d] rounded-lg"
+              >
+                <img src="./images/prod6.png" alt="prod6.png" />
+              </div>
               <!-- icon div -->
               <div class="mt-5 mb-2">
                 <i class="fa-solid fa-star text-[#FFC107]"></i>
@@ -254,7 +252,7 @@
               <div class="relative">
                 <input
                   id="coupon-field"
-                  class="p-4 rounded-s-lg w-full lg:max-w-[185px] xl:max-w-[258px] 2xl:max-w-[212px] border border-[#DBDBDB]"
+                  class="p-4 rounded-s-lg w-[235px] lg:max-w-[185px] xl:max-w-[258px] 2xl:max-w-[212px] border border-[#DBDBDB]"
                   placeholder="Coupon code"
                   type="text"
                   name=""
@@ -276,7 +274,7 @@
                 <ol id="selected-items-list" class="list-decimal ml-7"></ol>
               </div>
               <div
-                class="h-[1px] max-w-[294px] xl:max-w-[350px] 2xl:max-w-[318px] mt-3 mb-4 bg-[#11111126]"
+                class="h-[1px] max-w-[1024px] mt-3 mb-4 bg-[#11111126]"
               ></div>
               <!-- total price, discount and total -->
               <div>
@@ -293,9 +291,7 @@
                   <span id="afterDiscount">0.00</span> TK
                 </p>
               </div>
-              <div
-                class="h-[1px] max-w-[294px] xl:max-w-[350px] 2xl:max-w-[318px] my-6 bg-[#11111126]"
-              ></div>
+              <div class="h-[1px] max-w-[1024px] my-6 bg-[#11111126]"></div>
               <button
                 onclick="my_modal_5.showModal()"
                 id="btn-make-purchase"
