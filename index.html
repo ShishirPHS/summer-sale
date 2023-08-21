@@ -72,15 +72,15 @@
     </header>
     <main class="bg-[#F8F8F8] pt-32 pb-52">
       <section
-        class="container mx-auto grid grid-cols-4 gap-6 lg:gap-5 xl:gap-6"
+        class="container mx-auto grid grid-cols-1 lg:grid-cols-6 2xl:grid-cols-4 gap-6 lg:gap-5 xl:gap-6"
       >
         <!-- cards container wrapper -->
-        <div class="col-span-3">
+        <div class="lg:col-span-4 2xl:col-span-3">
           <!-- Kitchenware cards -->
           <h3 class="text-[#111] text-[40px] font-semibold mb-8">
             Kitchenware
           </h3>
-          <div class="grid grid-cols-3 gap-6">
+          <div class="grid grid-cols-3 gap-6 lg:gap-5 xl:gap-6">
             <!-- single card (k accessories one) -->
             <div
               onclick="handleClickedCard(this)"
@@ -124,7 +124,9 @@
                 <i class="fa-regular fa-star text-[#FFC107]"></i>
                 <i class="fa-regular fa-star text-[#FFC107]"></i>
               </div>
-              <h4 class="text-[#111] text-xl lg:text-base font-semibold mb-2">
+              <h4
+                class="text-[#111] text-xl lg:text-base xl:text-xl font-semibold mb-2"
+              >
                 Cutting Board Set
               </h4>
               <p class="text-[#11111180] text-xl">25.00 TK</p>
@@ -147,7 +149,9 @@
                 <i class="fa-solid fa-star text-[#FFC107]"></i>
                 <i class="fa-regular fa-star text-[#FFC107]"></i>
               </div>
-              <h4 class="text-[#111] text-xl lg:text-base font-semibold mb-2">
+              <h4
+                class="text-[#111] text-xl lg:text-base xl:text-xl font-semibold mb-2"
+              >
                 Home Cooker
               </h4>
               <p class="text-[#11111180] text-xl">49.00 TK</p>
@@ -176,7 +180,9 @@
                 <i class="fa-regular fa-star text-[#FFC107]"></i>
                 <i class="fa-regular fa-star text-[#FFC107]"></i>
               </div>
-              <h4 class="text-[#111] text-xl lg:text-base font-semibold mb-2">
+              <h4
+                class="text-[#111] text-xl lg:text-base xl:text-xl font-semibold mb-2"
+              >
                 Sports Back Cap
               </h4>
               <p class="text-[#11111180] text-xl">49.00 TK</p>
@@ -199,7 +205,9 @@
                 <i class="fa-solid fa-star text-[#FFC107]"></i>
                 <i class="fa-regular fa-star text-[#FFC107]"></i>
               </div>
-              <h4 class="text-[#111] text-xl lg:text-base font-semibold mb-2">
+              <h4
+                class="text-[#111] text-xl lg:text-base xl:text-xl font-semibold mb-2"
+              >
                 Full Jersey Set
               </h4>
               <p class="text-[#11111180] text-xl">69.00 TK</p>
@@ -222,7 +230,9 @@
                 <i class="fa-regular fa-star text-[#FFC107]"></i>
                 <i class="fa-regular fa-star text-[#FFC107]"></i>
               </div>
-              <h4 class="text-[#111] text-xl lg:text-base font-semibold mb-2">
+              <h4
+                class="text-[#111] text-xl lg:text-base xl:text-xl font-semibold mb-2"
+              >
                 Sports Cates
               </h4>
               <p class="text-[#11111180] text-xl">159.00 TK</p>
@@ -230,7 +240,7 @@
           </div>
         </div>
         <!-- cart container -->
-        <div class="col-span-1">
+        <div class="lg:col-span-2 2xl:col-span-1">
           <div class="grid gap-6">
             <!-- have coupon -->
             <div class="mt-[92px] p-6 bg-white rounded-lg">
@@ -240,7 +250,7 @@
               <div class="relative">
                 <input
                   id="coupon-field"
-                  class="p-4 rounded-s-lg max-w-[194px] lg:max-w-[138px] xl:max-w-[166px] 2xl:max-w-[194px] border border-[#DBDBDB]"
+                  class="p-4 rounded-s-lg max-w-[194px] lg:max-w-[185px] xl:max-w-[166px] 2xl:max-w-[212px] border border-[#DBDBDB]"
                   placeholder="Coupon code"
                   type="text"
                   name=""
@@ -248,7 +258,7 @@
                 <button
                   id="btn-apply"
                   onclick="getDiscount()"
-                  class="absolute left-[193px] pt-[15px] pb-[14.8px] px-6 lg:px-5 xl:px-6 bg-[#E527B2] text-white text-xl font-semibold rounded-e-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                  class="absolute pt-[15px] pb-[14.8px] px-6 lg:px-5 xl:px-6 bg-[#E527B2] text-white text-xl font-semibold rounded-e-lg disabled:opacity-50 disabled:cursor-not-allowed"
                   disabled
                 >
                   Apply
@@ -285,7 +295,7 @@
               <button
                 onclick="my_modal_5.showModal()"
                 id="btn-make-purchase"
-                class="absolute text-white py-4 px-[72px] 2xl:px-[83px] bg-[#E527B2] rounded-lg text-xl font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+                class="absolute text-white py-4 px-[72px] lg:px-[65px] 2xl:px-[83px] bg-[#E527B2] rounded-lg text-xl font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled
               >
                 Make Purchase
