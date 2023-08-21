@@ -39,7 +39,9 @@
   <body>
     <header class="bg-[#F9F6E2]">
       <!-- banner part -->
-      <div class="container mx-auto flex justify-between items-center py-20">
+      <div
+        class="container mx-auto flex flex-col lg:flex-row justify-between items-center py-20"
+      >
         <!-- banner content -->
         <div class="flex flex-col items-center">
           <h4 class="text-[#111] text-3xl text-center font-medium">
@@ -72,7 +74,7 @@
     </header>
     <main class="bg-[#F8F8F8] pt-32 pb-52">
       <section
-        class="container mx-auto grid grid-cols-1 lg:grid-cols-6 2xl:grid-cols-4 gap-6 lg:gap-5 xl:gap-6"
+        class="container mx-auto px-5 lg:px-0 grid grid-cols-1 lg:grid-cols-6 2xl:grid-cols-4 gap-6 lg:gap-5 xl:gap-6"
       >
         <!-- cards container wrapper -->
         <div class="lg:col-span-4 2xl:col-span-3">
@@ -80,14 +82,14 @@
           <h3 class="text-[#111] text-[40px] font-semibold mb-8">
             Kitchenware
           </h3>
-          <div class="grid grid-cols-3 gap-6 lg:gap-5 xl:gap-6">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-5 xl:gap-6">
             <!-- single card (k accessories one) -->
             <div
               onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
               <img
-                class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-24 2xl:px-[108px]"
+                class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-[60px] 2xl:px-[108px]"
                 src="./images/prod1.png"
                 alt="prod1.png"
               />
@@ -112,7 +114,7 @@
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
               <img
-                class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-24 2xl:px-[108px]"
+                class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-[60px] 2xl:px-[108px]"
                 src="./images/prod2.png"
                 alt="prod2.png"
               />
@@ -136,11 +138,13 @@
               onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
-              <img
-                class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-24 2xl:px-[108px]"
-                src="./images/prod3.png"
-                alt="prod3.png"
-              />
+              <div>
+                <img
+                  class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-[60px] 2xl:px-[108px]"
+                  src="./images/prod3.png"
+                  alt="prod3.png"
+                />
+              </div>
               <!-- icon div -->
               <div class="mt-5 mb-2">
                 <i class="fa-solid fa-star text-[#FFC107]"></i>
@@ -161,14 +165,14 @@
           <h3 class="text-[#111] text-[40px] font-semibold mb-8 mt-14">
             Sportswear
           </h3>
-          <div class="grid grid-cols-3 gap-6 lg:gap-5 xl:gap-6">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-5 xl:gap-6">
             <!-- single card (cap) -->
             <div
               onclick="handleClickedCard(this)"
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
               <img
-                class="py-8 bg-[#1111110d] rounded-lg lg:px-[40px] xl:px-24 2xl:px-[108px]"
+                class="py-8 bg-[#1111110d] rounded-lg px-[65px] lg:px-[40px] xl:px-[60px] 2xl:px-[108px]"
                 src="./images/prod4.png"
                 alt="prod4.png"
               />
@@ -193,7 +197,7 @@
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
               <img
-                class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-24 2xl:px-[108px]"
+                class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-[60px] 2xl:px-[108px]"
                 src="./images/prod5.png"
                 alt="prod5.png"
               />
@@ -218,7 +222,7 @@
               class="p-5 bg-white flex flex-col items-center justify-center rounded-lg"
             >
               <img
-                class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-24 2xl:px-[108px]"
+                class="py-8 bg-[#1111110d] rounded-lg lg:px-10 xl:px-[60px] 2xl:px-[108px]"
                 src="./images/prod6.png"
                 alt="prod6.png"
               />
@@ -250,7 +254,7 @@
               <div class="relative">
                 <input
                   id="coupon-field"
-                  class="p-4 rounded-s-lg max-w-[194px] lg:max-w-[185px] xl:max-w-[166px] 2xl:max-w-[212px] border border-[#DBDBDB]"
+                  class="p-4 rounded-s-lg w-full lg:max-w-[185px] xl:max-w-[258px] 2xl:max-w-[212px] border border-[#DBDBDB]"
                   placeholder="Coupon code"
                   type="text"
                   name=""
@@ -272,7 +276,7 @@
                 <ol id="selected-items-list" class="list-decimal ml-7"></ol>
               </div>
               <div
-                class="h-[1px] max-w-[294px] 2xl:max-w-[318px] mt-3 mb-4 bg-[#11111126]"
+                class="h-[1px] max-w-[294px] xl:max-w-[350px] 2xl:max-w-[318px] mt-3 mb-4 bg-[#11111126]"
               ></div>
               <!-- total price, discount and total -->
               <div>
@@ -290,19 +294,17 @@
                 </p>
               </div>
               <div
-                class="h-[1px] max-w-[294px] 2xl:max-w-[318px] my-6 bg-[#11111126]"
+                class="h-[1px] max-w-[294px] xl:max-w-[350px] 2xl:max-w-[318px] my-6 bg-[#11111126]"
               ></div>
               <button
                 onclick="my_modal_5.showModal()"
                 id="btn-make-purchase"
-                class="absolute text-white py-4 px-[72px] lg:px-[65px] 2xl:px-[83px] bg-[#E527B2] rounded-lg text-xl font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+                class="absolute text-white py-4 px-[72px] lg:px-[65px] xl:px-[105px] 2xl:px-[83px] bg-[#E527B2] rounded-lg text-xl font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled
               >
                 Make Purchase
               </button>
               <!-- modal code start -->
-              <!-- Open the modal using ID.showModal() method -->
-              <!-- Open the modal using ID.showModal() method -->
               <dialog id="my_modal_5" class="modal modal-middle">
                 <form
                   method="dialog"
